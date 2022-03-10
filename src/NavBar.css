@@ -1,0 +1,47 @@
+.NavBar {
+    width: 75px;
+    height: 100vh;
+    background-color: #2E1C2B;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: width 200ms ease;
+}
+
+.NavElement {
+    display: flex;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    margin: 15px 5px 0 15px;
+    display: none;
+}
+
+svg {
+    transition: color 200ms ease;
+    margin-left: 10px;
+}
+
+.NavBar:hover {
+    width: 150px;
+}
+
+.NavBar:hover a {
+    display: inline-flex;
+}
+
+.NavBar:hover svg {
+    color: #b037b9;
+}
+
+.Wiki {
+    margin-left: 2px;
+    transition: margin-left 200ms ease;
+}
+
+.NavBar:hover .Wiki {
+    margin-left: 40px;
+}
